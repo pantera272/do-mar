@@ -34,16 +34,17 @@
 
         .text-touch {
           margin-left: 20px;
-          font-size: 18px;
-           
+          
           p:first-child {
             font-weight: 600;
             margin-top: 0;
+            font-size: 18px;
           }
 
           p {
             margin-bottom: 0;
             line-height: 24px;
+            font-size: 16px;
           }
         }
       }
@@ -56,11 +57,63 @@
   }
 }
 
-.banner {
-  
-  img {  
-    width: 100%;
-    object-fit: cover;
-    height: 550px;
+.navigation {
+  width: 100%;
+
+  .navigation-box {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      width: 1200px;
+      height: 60px;
+      background-color: colors.$main;
+      display: flex;
+      justify-content: center;
+      align-items: middle;
+
+      li {
+        display: inline-block ;
+        height: 40px;
+        margin-top: 19px;
+
+        a {
+          font-size: 18px;
+          text-transform: uppercase;
+          padding: 11px 30px;
+          font-weight: 600;
+          color: colors.$white;
+          transition: 300ms;
+
+          i {
+            margin-left: 10px;
+            opacity: 0;
+            transition: 300ms;
+          }
+        }
+
+        a:hover {
+          color: colors.$main;
+          background-color: colors.$white;
+          margin-left: -10px;
+
+          i {
+            margin-left: 20px;
+            opacity: 1;
+          }
+        }
+      }  
+    } 
   }
+}
+
+.banner {
+
+  margin-top: -30px;
+  width: 100%;
+  object-fit: cover;
+  height: 550px;
+  background-image: url('../images/house.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
