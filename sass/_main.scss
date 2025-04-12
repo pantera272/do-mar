@@ -1,0 +1,66 @@
+@use './colors';
+
+.header-container {
+  height: 200px;
+  background-color: colors.$white;
+  display: flex;
+  justify-content: center;
+
+  .box {
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .logo {
+      
+      img {
+        height: 80px;         
+      }  
+    }
+
+    .contact {
+      display: flex;
+      justify-content: flex-end;
+
+      .touch {
+        display: flex;
+
+        .icon {
+          font-size: 45px;
+          color: colors.$main;
+        }
+
+        .text-touch {
+          margin-left: 20px;
+          font-size: 18px;
+           
+          p:first-child {
+            font-weight: 600;
+            margin-top: 0;
+          }
+
+          p {
+            margin-bottom: 0;
+            line-height: 24px;
+          }
+        }
+      }
+
+      .email {
+        margin-left: 50px; 
+        margin-right: 50px;
+      }
+    }
+  }
+}
+
+.banner {
+  
+  img {  
+    width: 100%;
+    object-fit: cover;
+    height: 550px;
+  }
+}

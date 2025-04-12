@@ -1,0 +1,11 @@
+.header-container {
+  height: 200px;
+  background-color: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3MvbWFpbi5tb2R1bGUuc2NzcyIsImdsb2JhbC5tb2R1bGUuY3NzIiwiLi4vc2Fzcy9nbG9iYWwubW9kdWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFBO0VBQ0EscUJBQUE7QUNDRjs7QUNBQTtFQUNFLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7QURHRiIsImZpbGUiOiJnbG9iYWwubW9kdWxlLmNzcyJ9 */
