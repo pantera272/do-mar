@@ -128,12 +128,22 @@
     flex-direction: column;
 
     h2 {
-      font-size: 60px;
-      font-weight: 600;
-      color: colors.$white;
-      letter-spacing: 2px;
-      margin-bottom: 50px;
-
+      height: 96px;
+      
+      span {
+        height: 96px;
+        font-size: 60px;
+        font-weight: 600;
+        color: colors.$white;
+        letter-spacing: 2px;
+        opacity: 0;
+        transition: opacity 300ms;
+      }
+      
+      .show {
+        opacity: 1;
+      }
+      
       .corners {
         display: inline-block;
         width: 80px;
@@ -176,6 +186,8 @@
         border-radius: 3px;
         margin: 20px;
         transition: 300ms;
+        opacity: 0;
+        transition: opacity 300ms;
 
         i {
           margin-left: 20px;
@@ -186,6 +198,10 @@
       a:hover {
         border-color: colors.$main;
         background-color: colors.$main;
+      }
+
+      .show {
+        opacity: 1;
       }
     } 
   } 
