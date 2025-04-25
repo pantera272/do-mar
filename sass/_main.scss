@@ -206,3 +206,114 @@
     } 
   } 
 }
+
+.our-services {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
+  .container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .services {
+      width: 575px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+
+      .service-icon {
+        position: absolute;
+        left: 257px;
+        top: 30px;
+        width: 60px;
+        height: 60px;
+        background-color: colors.$main;
+        transform: rotate(45deg);
+        border: 5px solid colors.$white;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          font-size: 32px;
+          color: colors.$white;
+          transform: rotate(-45deg);
+        }
+      }
+    
+      .text {
+        width: 285px;
+        color: colors.$white;
+        background-color: colors.$dark;
+        text-align: center;
+        position: relative;
+
+        h3 {
+          color: colors.$main;
+          margin: 20px auto;
+          font-size: 18px;
+        }
+
+        p {
+          margin: 50px;
+          font-size: 16px;
+        }
+
+        h3:after {
+          position: absolute;
+          left: 92px;
+          content: "";
+          display: block;
+          margin-top: 15px;
+          background-color: colors.$main;
+          width: 101px;
+          height: 2px;
+        }
+      }
+
+      .photo {
+        width: 285px;
+        height: 100%;
+        overflow: hidden;
+        
+        img {
+          width: 285px;
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1);
+          transition: transform 300ms;
+        }
+
+        img:hover {
+          transform: scale(1.3);
+        }
+      }
+    }
+  }
+}
+
+footer {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: colors.$dark;
+  color: colors.$white;
+
+  .container {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.disable-view {
+  display: none;
+}
